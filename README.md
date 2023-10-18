@@ -4,7 +4,8 @@ A simple Visual Studio Code plugin that converts html text to React JSX.
 
 Just `ctrl + shift + P` -> `Convert HTML to React JSX` in the document you want to edit and run it.
 
-![converting and html text to JSX](https://raw.githubusercontent.com/PB2204/Html2React/master/gif/Html2React.gif)
+
+![Html2React](https://github.com/PB2204/Html2React/assets/120979437/7a5162cc-a1c2-4b83-b6d1-ab6fedb69dd9)
 
 ## How does it work
 
