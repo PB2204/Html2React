@@ -1,0 +1,59 @@
+{
+  "name": "html2react",
+  "displayName": "Html2React",
+  "description": "This VS Code Extension Converts HTML code to React JSX",
+  "author": {
+    "name": "Pabitra Banerjee",
+    "email": "rockstarpabitra2204@gmail.com"
+  },
+  "publisher": "PabitraBanerjee",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.46.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PB2204/Html2React.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "icon/Html2React.png",
+  "keywords": [
+    "html",
+    "converter",
+    "jsx",
+    "react",
+    "vue",
+    "converter",
+    "tailwind"
+  ],
+  "activationEvents": [
+    "onCommand:Html2React.convert"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "Html2React.convert",
+        "title": "Convert HTML to React JSX"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.46.0",
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.11.0",
+    "eslint": "^6.8.0",
+    "glob": "^7.1.6",
+    "mocha": "^7.1.2",
+    "typescript": "^3.8.3",
+    "vscode-test": "^1.3.0"
+  }
+}
