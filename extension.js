@@ -38,7 +38,14 @@ function activate(context) {
         "stroke-w": "strokeW",
         "<!--": "{/*",
         "-->": "*/}",
-        tabindex: "tabIndex",
+        "tabindex": "tabIndex",
+        "colspan": "colSpan:,
+        "rowspan": "rowSpan:,
+        "aria-*": "aria-*",
+        "data-*": "data-*",
+        "onclick": "onClick",
+        "onchange": "onChange",
+        "onblur": "onBlur",
       };
 
       var formattedText = replaceAll(text, mapObj);
