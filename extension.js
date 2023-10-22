@@ -31,6 +31,8 @@ function activate(context) {
       }
 
       var mapObj = {
+         /*inbuilt library meant for mapping html components to react components whenever the replaceAll function runs through the 
+         html code and converts it to the react component*/
         "class=": "className=",
         "for=": "htmlFor=",
         "-rule": "Rule",
@@ -46,6 +48,7 @@ function activate(context) {
         "onclick": "onClick",
         "onchange": "onChange",
         "onblur": "onBlur",
+        "id":"key"
       };
 
       var formattedText = replaceAll(text, mapObj);
