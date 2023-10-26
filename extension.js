@@ -49,6 +49,10 @@ function activate(context) {
       };
 
       var formattedText = replaceAll(text, mapObj);
+      
+      // Handle self-closing tags
+      formattedText = formattedText.replace(/<(area|base|br|col|command|embed|hr|img|input|keygen|link|meta|param|source|track|wbr)([^>]*?)(?<!\/)>(<\/\1>|)/g, "<$1$2 />");
+
 
       editor.edit((editBuilder) =>
         editBuilder.replace(textRange, formattedText)
